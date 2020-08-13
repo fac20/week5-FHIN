@@ -9,13 +9,13 @@ Our aim was to **get familiar with databases** (design and document a database s
 
 ## Whimsical prototyping
 
-<img src="images/Whimsical-1.png" alt="prototype for mobile" width="600rem"> 
-<img src="images/Whimsical-2.png" alt="prototype for desktop" width="600rem">
+<img src="public/images/Whimsical-1.png" alt="prototype for mobile" width="600rem"> 
+<img src="public/images/Whimsical-2.png" alt="prototype for desktop" width="600rem">
 
 ## Crazy 8s
 
-<img src="images/Miro-1.png" alt="prototype for mobile" width="400rem"> <img src="images/Miro-4.png" alt="prototype for mobile" width="400rem">
-<img src="images/Miro-2.png" alt="prototype for mobile" width="400rem"> <img src="images/Miro-3.png" alt="prototype for mobile" width="400rem">  
+<img src="public/images/Miro-1.png" alt="prototype for mobile" width="400rem"> <img src="public/images/Miro-4.png" alt="prototype for mobile" width="400rem">
+<img src="public/images/Miro-2.png" alt="prototype for mobile" width="400rem"> <img src="public/images/Miro-3.png" alt="prototype for mobile" width="400rem">  
 
 
 ## Schema Info
