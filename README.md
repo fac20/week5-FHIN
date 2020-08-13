@@ -117,8 +117,10 @@ Heroku databases require a secure encrypted connection by default (“SSL”). n
 
 ## Crazy 8s
 
-<img src="public/images/Miro-1.png" alt="prototype for mobile" width="400rem"> <img src="public/images/Miro-4.png" alt="prototype for mobile" width="400rem">
-<img src="public/images/Miro-2.png" alt="prototype for mobile" width="400rem"> <img src="public/images/Miro-3.png" alt="prototype for mobile" width="400rem">  
+<img src="public/images/Miro-1.png" alt="prototype for mobile" width="400rem"> 
+<img src="public/images/Miro-4.png" alt="prototype for mobile" width="400rem">
+<img src="public/images/Miro-2.png" alt="prototype for mobile" width="400rem"> 
+<img src="public/images/Miro-3.png" alt="prototype for mobile" width="400rem">  
 
 
 ## 🦄 The dream team 🦄
