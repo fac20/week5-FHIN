@@ -9,18 +9,15 @@ Our aim was to **get familiar with databases** (design and document a database s
 
 ## Whimsical prototyping
 
+Our aim was to create a simple app, with a landing page displaying our logo and a tomato with to buttons(iPhoneX 1 below), one to add a recipe which would bring the user to a simple input form (iPhoneX 2 below) and one to display all recipe in a sheet like manner(iPhoneX 3 below). We intended to have the latter in a display flex so as having multiple recipes displaying side by side in desktop version (window display below).
+
 <img src="public/images/Whimsical-1.png" alt="prototype for mobile" width="600rem"> 
 <img src="public/images/Whimsical-2.png" alt="prototype for desktop" width="600rem">
-
-## Crazy 8s
-
-<img src="public/images/Miro-1.png" alt="prototype for mobile" width="400rem"> <img src="public/images/Miro-4.png" alt="prototype for mobile" width="400rem">
-<img src="public/images/Miro-2.png" alt="prototype for mobile" width="400rem"> <img src="public/images/Miro-3.png" alt="prototype for mobile" width="400rem">  
 
 
 ## Schema Info
 
-Our databse has two tables that are referencing each other on user id.
+Our database has two tables that are referencing each other on user id.
 
 #### Users
 
@@ -37,6 +34,7 @@ Our databse has two tables that are referencing each other on user id.
 | ------------ | ----------- | -------------------- |
 | id           | SERIAL      | PRIMARY KEY          |
 | user_id      | INTEGER     | REFERENCES users(id) |
+| recipe_name. | TEXT        |                      |
 | time         | VARCHAR(255)|                      |
 | ingredients  | TEXT        |                      |
 | method       | TEXT        |
@@ -57,16 +55,16 @@ This project was build over a 1.5 day sprint with the following times and pair-p
 
 12:37 - 12:45 Roles meeting to discuss individual roles
 
-2:00 - 2:15 Team chat about user manuals and project blue print
+14:00 - 14:15 Team chat about user manuals and project blue print
 
-2:15- 3:15 Crazy 8s and Whimsical prototyping
+14:15- 15:15 Crazy 8s and Whimsical prototyping
 
-3:15 - 4:00 Pair programming 
+15:15 - 16:00 Pair programming 
 
   - Jihyun/Terry: research to set up server 
   - Rihards/Lisa: HTML structure, log, form and images
 
-4:00 - 4:30: SQL mobbing
+16:00 - 16:30: SQL mobbing
 
 
 **Day 2:**
@@ -89,13 +87,38 @@ This project was build over a 1.5 day sprint with the following times and pair-p
   
 14:00 - 15:20 Team stand-ups!
 
-15:20 - 
+15:20 - 18:00 Resolved issue with try to connect to your remote Heroku database locally 
+              Wrote public handler
 
-  - Jihyun/Terry: 
-  - Lisa/Rihards:
-  
+Afterhours 🤫🤫 Wrote model.js with createNewRecipes function and getRecipes function which query to the database 
+               Added to home handler function to get data from database and display in app
+              
 ![Time gif](https://media.giphy.com/media/Sk3KytuxDQJQ4/giphy.gif)
 
+## Takeaway lesson
+
+Heroku databases require a secure encrypted connection by default (“SSL”). node-postgres does not connect via SSL by default, but you can tell it to by passing an extra option like this:
+    
+``` 
+  const options = {
+    connectionString: databaseUrl,
+    ssl: { rejectUnauthorized: false },
+  };
+  const db = new pg.Pool(options);
+```
+
+## Tools
+
+- Heroku, not so well apparently 🤪
+- Miro for crazy 8s 
+- Whimsical for prototyping 
+- Coffee ☕️☕️☕️
+
+
+## Crazy 8s
+
+<img src="public/images/Miro-1.png" alt="prototype for mobile" width="400rem"> <img src="public/images/Miro-4.png" alt="prototype for mobile" width="400rem">
+<img src="public/images/Miro-2.png" alt="prototype for mobile" width="400rem"> <img src="public/images/Miro-3.png" alt="prototype for mobile" width="400rem">  
 
 
 ## 🦄 The dream team 🦄
