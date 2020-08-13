@@ -6,10 +6,32 @@ This project was created during the 5th week of [Founders and Coders'](https://w
 
 Our aim was to **get familiar with databases** (design and document a database schema, normalize our data to reduce duplication, create a relational database, etc..) and **SQL** (SQL queries, query parameters to avoid SQL-injection vulnerabilities) as well further our knowledge of **Node** (handle database errors on our server without crashing).
 
+## Schema Info
+
+Our databse has two tables that are referencing each other on user id.
+
+#### Users
+
+| Column     | Type                                              | Constraints |
+| ---------- | ------------------------------------------------- | ----------- |
+| id         | SERIAL (translates to integer and AUTO_INCREMENT) | PRIMARY KEY |
+| username   | VARCHAR(255)                                      | NOT NULL    |
+| location   | VARCHAR(255)                                      |
+
+
+#### Recipes
+
+| Column       | Type        | Constraints          |
+| ------------ | ----------- | -------------------- |
+| id           | SERIAL      | PRIMARY KEY          |
+| user_id      | INTEGER     | REFERENCES users(id) |
+| time         | VARCHAR(255)|                      |
+| ingredients  | TEXT        |                      |
+| method       | TEXT        |
 
 
 
-### Project timeline
+## Project timeline
 
 This project was build over a 1.5 day sprint with the following times and pair-programming/mobbing modes:
 
@@ -51,18 +73,20 @@ This project was build over a 1.5 day sprint with the following times and pair-p
 12:10 - 13:00 Pair-programming
 
   - Jihyun/Rihards: Created server.js, router.js and handlers.js (wrote missing handler and started working on home handler)
-  - Lisa/Terry: Created connection.js and connected database
+  - Lisa/Terry: Created connection.js and connected database  
   
-14:00 - 15:00 Pair-programming
+14:00 - 15:20 Team stand-ups!
+
+15:20 - 
 
   - Jihyun/Terry: 
   - Lisa/Rihards:
-
+  
 ![Time gif](https://media.giphy.com/media/Sk3KytuxDQJQ4/giphy.gif)
 
 
 
-### 🦄 The dream team 🦄
+## 🦄 The dream team 🦄
 
 🌟 [Lisa](https://github.com/LiCern) - Scrum facilitator
 
