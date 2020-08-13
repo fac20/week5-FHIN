@@ -16,10 +16,9 @@ BEGIN;
     method TEXT
 );
 
-INSERT INTO users (username, location) VALUES
-  ('Sery1976', 'Middlehill, UK'),
-  ('Notne1991', 'Sunipol, UK')  
-;
-
+    INSERT INTO users (username, location) VALUES
+    ('Lisa', 'London'),
+    ('Terry', 'London')
+    ;
 
 COMMIT;
