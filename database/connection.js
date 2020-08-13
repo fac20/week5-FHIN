@@ -3,14 +3,18 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const connectionString = process.env.DB_URL;
-console.log(connectionString);
+const dataBaseURL = process.env.DATABASE_URL;
+console.log(dataBaseURL);
 
-if (!connectionString) {
+if (!dataBaseURL) {
     console.error()
   };
 
-const db = new pg.Pool({ connectionString });
+const options = {
+    connectionString: dataBaseURL,
+    ssl: { rejectUnauthorized: false },
+  };
+const db = new pg.Pool(options);
 
 db.query("SELECT * FROM users").then((result) => console.log(result));
 

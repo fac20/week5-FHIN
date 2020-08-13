@@ -14,7 +14,7 @@ BEGIN;
     time VARCHAR(255),
     ingredients TEXT,
     method TEXT
-);
+    );
 
     INSERT INTO users (username, location) VALUES
     ('Lisa', 'London'),
