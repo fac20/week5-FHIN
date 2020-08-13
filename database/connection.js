@@ -10,7 +10,11 @@ if (!dataBaseURL) {
     console.error()
   };
 
-const db = new pg.Pool({ connectionString: dataBaseURL });
+const options = {
+    connectionString: dataBaseURL,
+    ssl: { rejectUnauthorized: false },
+  };
+const db = new pg.Pool(options);
 
 db.query("SELECT * FROM users").then((result) => console.log(result));
 
