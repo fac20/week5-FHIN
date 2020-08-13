@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/fac20/week5-FHIN/issues"
   },
-  "homepage": "https://github.com/fac20/week5-FHIN#readme"
+  "homepage": "https://github.com/fac20/week5-FHIN#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4",
+    "pg": "^8.3.0"
+  }
 }
