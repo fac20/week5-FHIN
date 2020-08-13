@@ -2,7 +2,7 @@
   "name": "week5-FHIN",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "NODE_ENV=test tape test.js | tap-spec"
   },

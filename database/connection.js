@@ -16,6 +16,6 @@ const options = {
   };
 const db = new pg.Pool(options);
 
-db.query("SELECT * FROM users").then((result) => console.log(result));
+db.query("SELECT * FROM users").then((result) => console.log(result.rows));
 
 module.exports = db;
