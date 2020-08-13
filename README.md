@@ -19,11 +19,11 @@ This project was build over a 1.5 day sprint with the following times and pair-p
 
 11:45-12:37 Made project board all together 
 
-12:37 - 12:45 Time to read user manuals 
+12:37 - 12:45 Reading each other's user manuals 
 
-12:37 - 12:45 Role meeting
+12:37 - 12:45 Roles meeting to discuss individual roles
 
-2:00 - 2:15 Team chat about user manuals and blue print
+2:00 - 2:15 Team chat about user manuals and project blue print
 
 2:15- 3:15 Crazy 8s and Whimsical prototyping
 
@@ -33,6 +33,7 @@ This project was build over a 1.5 day sprint with the following times and pair-p
   - Rihards/Lisa: HTML structure, log, form and images
 
 4:00 - 4:30: SQL mobbing
+
 
 **Day 2:**
 
@@ -49,16 +50,15 @@ This project was build over a 1.5 day sprint with the following times and pair-p
 
 12:10 - 13:00 Pair-programming
 
-  - Jihyun/Rihards:
-  - Lisa/Terry: 
+  - Jihyun/Rihards: Created server.js, router.js and handlers.js (wrote missing handler and started working on home handler)
+  - Lisa/Terry: Created connection.js and connected database
+  
+14:00 - 15:00 Pair-programming
 
+  - Jihyun/Terry: 
+  - Lisa/Rihards:
 
-
-
-
-![Time gif](https://media.giphy.com/media/l3q2IYN87QjIg51kc/giphy.gif)
-
-
+![Time gif](https://media.giphy.com/media/Sk3KytuxDQJQ4/giphy.gif)
 
 
 
