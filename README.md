@@ -1,6 +1,6 @@
 # What's cookin' puddin'? - your favourite recipe app
 
-<img src="images/logo.png" alt="logo image" width="250rem">
+<img src="public/images/logo.png" alt="logo image" width="250rem">
 
 This project was created during the 5th week of [Founders and Coders'](https://www.foundersandcoders.com/) 20th cohort (a.k.a database week 😱). 
 
