@@ -6,6 +6,18 @@ This project was created during the 5th week of [Founders and Coders'](https://w
 
 Our aim was to **get familiar with databases** (design and document a database schema, normalize our data to reduce duplication, create a relational database, etc..) and **SQL** (SQL queries, query parameters to avoid SQL-injection vulnerabilities) as well further our knowledge of **Node** (handle database errors on our server without crashing).
 
+
+## Whimsical prototyping
+
+<img src="images/Whimsical-1.png" alt="prototype for mobile" width="600rem"> 
+<img src="images/Whimsical-2.png" alt="prototype for desktop" width="600rem">
+
+## Crazy 8s
+
+<img src="images/Miro-1.png" alt="prototype for mobile" width="400rem"> <img src="images/Miro-4.png" alt="prototype for mobile" width="400rem">
+<img src="images/Miro-2.png" alt="prototype for mobile" width="400rem"> <img src="images/Miro-3.png" alt="prototype for mobile" width="400rem">  
+
+
 ## Schema Info
 
 Our databse has two tables that are referencing each other on user id.
