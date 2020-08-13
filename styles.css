@@ -1,0 +1,16 @@
+* {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: hsl(36, 100%, 90%);
+}
+.website-logo {
+    width: 90rem;
+}
+
+.tomato-placeholder {
+    width: 120rem;
+}
+
+
