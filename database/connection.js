@@ -3,14 +3,14 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const connectionString = process.env.DB_URL;
-console.log(connectionString);
+const dataBaseURL = process.env.DATABASE_URL;
+console.log(dataBaseURL);
 
-if (!connectionString) {
+if (!dataBaseURL) {
     console.error()
   };
 
-const db = new pg.Pool({ connectionString });
+const db = new pg.Pool({ connectionString: dataBaseURL });
 
 db.query("SELECT * FROM users").then((result) => console.log(result));
 
