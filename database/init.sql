@@ -1,6 +1,4 @@
-BEGIN;
-   
-   DROP TABLE IF EXISTS users, recipes CASCADE;
+ DROP TABLE IF EXISTS users, recipes CASCADE;
 
    CREATE TABLE users (
        id SERIAL PRIMARY KEY,
@@ -14,7 +12,7 @@ BEGIN;
     time VARCHAR(255),
     ingredients TEXT,
     method TEXT
-    );
+);
 
     INSERT INTO users (username, location) VALUES
     ('Lisa', 'London'),

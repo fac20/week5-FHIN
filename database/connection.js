@@ -4,7 +4,6 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const dataBaseURL = process.env.DATABASE_URL;
-console.log(dataBaseURL);
 
 if (!dataBaseURL) {
     console.error()
