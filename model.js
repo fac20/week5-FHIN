@@ -18,7 +18,7 @@ function getRecipes() {
     query(`SELECT * FROM recipes`)
     .then(result => result.rows)
     .catch(error => {
-       console.error(error)
+        console.error(error)
     })
 };
 

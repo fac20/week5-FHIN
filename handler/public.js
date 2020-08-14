@@ -7,7 +7,9 @@ const fileType = {
     html: "text/html",
     css: "text/css",
     png: "image/png",
-    js: "application/javascript"
+    js: "application/javascript",
+    ico: "image/x-icon"
+
 }
 
 function publicHandler(request, response) {
@@ -15,8 +17,6 @@ function publicHandler(request, response) {
     const array = file.split(".");
     const extension = array[1];
     const type = fileType[extension];
-    console.log(array);
-
 
     const filePath = path.join(__dirname, "..", file);
     fs.readFile(filePath, (error, data) => {
