@@ -6,6 +6,15 @@ This project was created during the 5th week of [Founders and Coders'](https://w
 
 Our aim was to **get familiar with databases** (design and document a database schema, normalize our data to reduce duplication, create a relational database, etc..) and **SQL** (SQL queries, query parameters to avoid SQL-injection vulnerabilities) as well further our knowledge of **Node** (handle database errors on our server without crashing).
 
+## To run our app
+
+Clone the repo
+
+``` node server.js ```
+
+Go to localhost3000
+
+Have fun!!! 🥳🥳🥳
 
 ## Whimsical prototyping
 
