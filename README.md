@@ -10,7 +10,10 @@ Our aim was to **get familiar with databases** (design and document a database s
 
 Clone the repo
 
-``` node server.js ```
+``` 
+npm install
+node server.js 
+```
 
 Go to localhost3000
 
