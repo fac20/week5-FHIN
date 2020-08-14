@@ -9,6 +9,7 @@ Our aim was to **get familiar with databases** (design and document a database s
 ## To run our app
 
 Clone the repo
+create .env file (please request database URL from us)
 
 ``` 
 npm install
