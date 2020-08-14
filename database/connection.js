@@ -4,7 +4,6 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const dataBaseURL = process.env.DATABASE_URL;
-console.log(dataBaseURL);
 
 if (!dataBaseURL) {
     console.error()
@@ -16,6 +15,6 @@ const options = {
   };
 const db = new pg.Pool(options);
 
-db.query("SELECT * FROM users").then((result) => console.log(result.rows));
+db.query("SELECT * FROM users").then((result) => result.rows);
 
 module.exports = db;

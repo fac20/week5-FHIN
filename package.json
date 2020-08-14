@@ -1,16 +1,15 @@
 {
-  "name": "week5-FHIN",
+  "name": "week5-fhin",
   "version": "1.0.0",
-  "description": "",
+  "description": "<img src=\"public/images/logo.png\" alt=\"logo image\" width=\"250rem\">",
   "main": "server.js",
   "scripts": {
-    "test": "NODE_ENV=test tape test.js | tap-spec"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fac20/week5-FHIN.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -19,7 +18,6 @@
   "homepage": "https://github.com/fac20/week5-FHIN#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "nodemon": "^2.0.4",
     "pg": "^8.3.0"
   }
 }

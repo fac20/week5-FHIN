@@ -1,20 +1,21 @@
+BEGIN;
+
 DROP TABLE IF EXISTS users, recipes CASCADE;
 
-   CREATE TABLE users (
+CREATE TABLE users (
        id SERIAL PRIMARY KEY,
        username VARCHAR(255) NOT NULL,
-       location VARCHAR(255),
-    --    recipes SERIAL REFERENCES recipes(id),
-   );
+       location VARCHAR(255)
+);
 
-   CREATE TABLE recipes (
+CREATE TABLE recipes (
     id SERIAL PRIMARY KEY,
     user_id INTEGER REFERENCES users(id),
     recipe_name TEXT,
     time VARCHAR(255),
     ingredients TEXT,
     method TEXT
-    );
+);
 
     INSERT INTO users (username, location) VALUES
     ('Lisa', 'London'),
@@ -22,8 +23,12 @@ DROP TABLE IF EXISTS users, recipes CASCADE;
     ;
 
     INSERT INTO recipes 
-    (recipe_name, time, ingredients, method) 
+    (user_id, recipe_name, time, ingredients, method) 
     VALUES
-    ('pasta', '20', 'pasta, oil, tomatoes, bacon', 'cook it')
+    (1, 'pasta', '20', 'pasta, oil, tomatoes, bacon', 'cook it')
     ;
 COMMIT;
+
+
+
+

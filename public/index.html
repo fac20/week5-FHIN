@@ -16,12 +16,14 @@
         </nav>
     </header>
     <main>
-        <form id="input-form">
-            <input type="text" name="Recipe name" placeholder="recipe name" required>
-            <input type="text" name="Ingredients" placeholder="Ingredients" required>
-            <input type="text" name="Time" placeholder="Time" required>
+        <form id="input-form" action="/submit" method="POST">
+            <input type="text" name="recipe_name" placeholder="recipe_name" required>
+            <input type="text" name="ingredients" placeholder="ingredients" required>
+            <input type="text" name="time" placeholder="time" required>
             <textarea name="method" placeholder="method" required></textarea>
             <input type="text" name="author" placeholder="author" required>
+            <button type="reset">Reset</button>
+            <button type="submit">Upload recipe</button>
         </form>  
         <ul id="recipe-list"><!-- recipe-placeholder --></ul>
     </main>

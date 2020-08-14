@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const missingHandler = require("./missing");
-const db = require("../model");
+const database = require("../model");
 
 function homeHandler(request, response) {
     
@@ -12,15 +12,26 @@ function homeHandler(request, response) {
             console.log(error);
             response.end(missingHandler);
         } else {
-            const listItem = db;
-            console.log("List Items: ", listItem);
-            // const list = listItem.map((object) => `<li>${object}</li>`);
-            // const html = data.replace(`<!-- recipe-placeholder -->`, list.join("\n"));
+            database.getRecipes().then(recipe => {
 
-            response.writeHead(200, { "content-type": "text/html" });
-            response.end(data);
+                console.log("post: ", recipe)
+                console.log(recipe[0].method);
+                const post = recipe.map((r) => {
+                return (`<li><p class="label">Recipe Name: </p><br><p class="description">${r.recipe_name}</p></li>
+                <li><p class="label">Prep Time: </p><br><p class="description">${r.time}</p></li>
+                <li><p class="label">Ingredients: </p><br><p class="description">${r.ingredients}</p></li>
+                <li><p class="label">Method: </p><br><p class="description">${r.method}</p></li>`)
+                });
+                console.log(post);
+                data = data.replace(`<!-- recipe-placeholder -->`, post.join(","));
+                
+                response.writeHead(200, { "content-type": "text/html" });
+                response.end(data);
+            })
         }
     });
 }
 
 module.exports = homeHandler;
+
+                
