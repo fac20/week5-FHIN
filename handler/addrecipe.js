@@ -1,6 +1,7 @@
 
 const database = require("../model");
 const querystring = require('querystring');
+const missingHandler = require("./missing");
 
 function addRecipe(request, response) {
     let body = "";
@@ -21,7 +22,7 @@ function addRecipe(request, response) {
           "content-type": "text/html"
         });
         console.error(error);
-        response.end("<h1>Error</h1>");
+        response.end(missingHandler);
       });
 }
 

@@ -13,6 +13,10 @@
     width: 35rem;
 }
 
+.hidden {
+    display: none;
+}
+
 /* pleases stile the list proeprties are below: */
 
 li {

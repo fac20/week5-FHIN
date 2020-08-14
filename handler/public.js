@@ -15,6 +15,7 @@ function publicHandler(request, response) {
     const array = file.split(".");
     const extension = array[1];
     const type = fileType[extension];
+    console.log(array);
 
 
     const filePath = path.join(__dirname, "..", file);
